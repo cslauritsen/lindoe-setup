@@ -2,7 +2,9 @@
 Use [linode's instructions to install fail2ban](https://www.linode.com/docs/guides/how-to-use-fail2ban-for-ssh-brute-force-protection/).
 
 ## DROP instead of REJECT
-Optional: update the ban rule to iptables' `DROP` instead of `REJECT`. This saves you on outoing bandwidth, and wastes attackers' resources too. Add the following content to `/etc/fail2ban/action.d/`:
+Optional: update the ban rule to iptables' `DROP` instead of `REJECT`. This saves you on outoing bandwidth, and wastes attackers' resources too. 
+
+Create the file `/etc/fail2ban/action.d/iptables-common.local` and add the following content:
 
 ```
 [Init]
