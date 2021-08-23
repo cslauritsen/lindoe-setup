@@ -1,3 +1,6 @@
+# Use ATP to get $100 Credit
+I forgot to do this. :-(
+
 # Fail2Ban
 Use [linode's instructions to install fail2ban](https://www.linode.com/docs/guides/how-to-use-fail2ban-for-ssh-brute-force-protection/).
 
@@ -29,4 +32,5 @@ blocktype = DROP
 #blocktype = REJECT --reject-with icmp6-port-unreachable
 blocktype = DROP
 ```
+
 
