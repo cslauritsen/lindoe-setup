@@ -1,0 +1,23 @@
+
+[Init]
+
+# Option:  blocktype
+# Note:    This is what the action does with rules. This can be any jump target
+#          as per the iptables man page (section 8). Common values are DROP
+#          REJECT, REJECT --reject-with icmp-port-unreachable
+# Values:  STRING
+#blocktype = REJECT --reject-with icmp-port-unreachable
+# csl 23-aug-2021 drop is better, imo
+blocktype = DROP
+
+
+[Init?family=inet6]
+
+# Option:  blocktype (ipv6)
+# Note:    This is what the action does with rules. This can be any jump target
+#          as per the iptables man page (section 8). Common values are DROP
+#          REJECT, REJECT --reject-with icmp6-port-unreachable
+# Values:  STRING
+#blocktype = REJECT --reject-with icmp6-port-unreachable
+blocktype = DROP
+
